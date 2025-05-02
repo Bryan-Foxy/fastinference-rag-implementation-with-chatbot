@@ -15,9 +15,10 @@ import os
 import requests
 import threading
 import tkinter as tk
+from config import CONFIG
 from tkinter import filedialog, ttk, scrolledtext
 
-API_URL = "http://127.0.0.1:5000"
+API_URL = CONFIG.API_URL
 
 class RAGInterface:
     def __init__(self, root):
